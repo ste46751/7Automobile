@@ -33,7 +33,7 @@
             this.bttn_Amarcia = new System.Windows.Forms.Button();
             this.txt_AccSpe = new System.Windows.Forms.TextBox();
             this.txt_Accelera = new System.Windows.Forms.TextBox();
-            this.txt_Amarcia = new System.Windows.Forms.TextBox();
+            this.txt_Marcia = new System.Windows.Forms.TextBox();
             this.txt_Smarcia = new System.Windows.Forms.TextBox();
             this.bttn_Smarcia = new System.Windows.Forms.Button();
             this.bttn_Decelera = new System.Windows.Forms.Button();
@@ -67,6 +67,7 @@
             this.bttn_Amarcia.TabIndex = 2;
             this.bttn_Amarcia.Text = "Aumenta marcia";
             this.bttn_Amarcia.UseVisualStyleBackColor = true;
+            this.bttn_Amarcia.Click += new System.EventHandler(this.bttn_Amarcia_Click);
             // 
             // txt_AccSpe
             // 
@@ -82,12 +83,12 @@
             this.txt_Accelera.Size = new System.Drawing.Size(132, 22);
             this.txt_Accelera.TabIndex = 4;
             // 
-            // txt_Amarcia
+            // txt_Marcia
             // 
-            this.txt_Amarcia.Location = new System.Drawing.Point(393, 140);
-            this.txt_Amarcia.Name = "txt_Amarcia";
-            this.txt_Amarcia.Size = new System.Drawing.Size(132, 22);
-            this.txt_Amarcia.TabIndex = 5;
+            this.txt_Marcia.Location = new System.Drawing.Point(393, 140);
+            this.txt_Marcia.Name = "txt_Marcia";
+            this.txt_Marcia.Size = new System.Drawing.Size(132, 22);
+            this.txt_Marcia.TabIndex = 5;
             // 
             // txt_Smarcia
             // 
@@ -98,12 +99,13 @@
             // 
             // bttn_Smarcia
             // 
-            this.bttn_Smarcia.Location = new System.Drawing.Point(553, 176);
+            this.bttn_Smarcia.Location = new System.Drawing.Point(393, 234);
             this.bttn_Smarcia.Name = "bttn_Smarcia";
             this.bttn_Smarcia.Size = new System.Drawing.Size(132, 42);
             this.bttn_Smarcia.TabIndex = 6;
             this.bttn_Smarcia.Text = "Scala marcia";
             this.bttn_Smarcia.UseVisualStyleBackColor = true;
+            this.bttn_Smarcia.Click += new System.EventHandler(this.bttn_Smarcia_Click);
             // 
             // bttn_Decelera
             // 
@@ -123,7 +125,7 @@
             this.Controls.Add(this.bttn_Decelera);
             this.Controls.Add(this.txt_Smarcia);
             this.Controls.Add(this.bttn_Smarcia);
-            this.Controls.Add(this.txt_Amarcia);
+            this.Controls.Add(this.txt_Marcia);
             this.Controls.Add(this.txt_Accelera);
             this.Controls.Add(this.txt_AccSpe);
             this.Controls.Add(this.bttn_Amarcia);
@@ -144,7 +146,7 @@
         private System.Windows.Forms.Button bttn_Amarcia;
         private System.Windows.Forms.TextBox txt_AccSpe;
         private System.Windows.Forms.TextBox txt_Accelera;
-        private System.Windows.Forms.TextBox txt_Amarcia;
+        private System.Windows.Forms.TextBox txt_Marcia;
         private System.Windows.Forms.TextBox txt_Smarcia;
         private System.Windows.Forms.Button bttn_Smarcia;
         private System.Windows.Forms.Button bttn_Decelera;
