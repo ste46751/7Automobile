@@ -36,6 +36,7 @@
             this.txt_Amarcia = new System.Windows.Forms.TextBox();
             this.txt_Smarcia = new System.Windows.Forms.TextBox();
             this.bttn_Smarcia = new System.Windows.Forms.Button();
+            this.bttn_Decelera = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // bttn_AccSpe
@@ -56,6 +57,7 @@
             this.bttn_Accelera.TabIndex = 1;
             this.bttn_Accelera.Text = "Accelera";
             this.bttn_Accelera.UseVisualStyleBackColor = true;
+            this.bttn_Accelera.Click += new System.EventHandler(this.bttn_Accelera_Click);
             // 
             // bttn_Amarcia
             // 
@@ -103,11 +105,22 @@
             this.bttn_Smarcia.Text = "Scala marcia";
             this.bttn_Smarcia.UseVisualStyleBackColor = true;
             // 
+            // bttn_Decelera
+            // 
+            this.bttn_Decelera.Location = new System.Drawing.Point(234, 234);
+            this.bttn_Decelera.Name = "bttn_Decelera";
+            this.bttn_Decelera.Size = new System.Drawing.Size(132, 42);
+            this.bttn_Decelera.TabIndex = 8;
+            this.bttn_Decelera.Text = "Decelera";
+            this.bttn_Decelera.UseVisualStyleBackColor = true;
+            this.bttn_Decelera.Click += new System.EventHandler(this.bttn_Decelera_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.bttn_Decelera);
             this.Controls.Add(this.txt_Smarcia);
             this.Controls.Add(this.bttn_Smarcia);
             this.Controls.Add(this.txt_Amarcia);
@@ -134,6 +147,7 @@
         private System.Windows.Forms.TextBox txt_Amarcia;
         private System.Windows.Forms.TextBox txt_Smarcia;
         private System.Windows.Forms.Button bttn_Smarcia;
+        private System.Windows.Forms.Button bttn_Decelera;
     }
 }
 
